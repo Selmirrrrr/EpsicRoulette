@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: student=$(shuf -n 1 "names.txt")
+        run: EXPORT student=$(shuf -n 1 "names.txt")
       
       - uses: JasonEtco/create-an-issue@v2
         env:
